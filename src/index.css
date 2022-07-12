@@ -1,0 +1,206 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(209,213,219,1)
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.banner{
+  height: 75vh;
+  background: linear-gradient(132deg, rgb(6, 2, 3) 0%, rgb(108, 64, 51) 100%);
+  position: relative;
+}
+.container{
+  color: rgba(255,255,255,0.5);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.banner__content img{
+    position: absolute;
+    top: 22%;
+    left: 10%;
+    width: 80%;
+    height: 110%;
+    border-radius: 10px;
+    background: linear-gradient(0deg,rgba(0,0,0,.9),rgba(0,0,0,.86339) 5.79%,rgba(0,0,0,.80208) 10.88%,rgba(0,0,0,.72141) 15.63%,rgba(0,0,0,.62667) 20.37%,rgba(0,0,0,.52318) 25.46%,rgba(0,0,0,.41625) 31.25%,rgba(0,0,0,.3112) 38.08%,rgba(0,0,0,.21333) 46.3%,rgba(0,0,0,.12797) 56.25%,rgba(0,0,0,.06042) 68.29%,rgba(0,0,0,.01599) 82.75%,transparent);
+}
+
+.banner__content .banner__notice{
+  width: 30%;
+  position: absolute;
+  left: 12%;
+  top: 100%;
+  font-size: 18px;
+  color: rgba(255,255,255,0.8);
+}
+
+.banner__content .banner__notice h2{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.banner__button{
+  position: absolute;
+  top: 115%;
+  right: 11%;
+  
+  
+}
+
+.banner__button button{
+  font-weight: bold;
+  color:rgba(255,255,255,1); 
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 3px solid rgba(37,99,235, 0.8);
+  background: rgba(37,99,235, 0.8);
+  transition: 0.3s;
+}
+
+.banner__button button:hover{
+  background: rgba(37,99,235, 0.5);
+}
+
+.banner__status{
+  position: absolute;
+  top: 22%;
+  font-size: 13px;
+  font-weight: bold;
+  right: 11%;
+  color: rgba(255,255,255,0.5);
+}
+.header__scrolling{
+  background: hsla(0,0%,100%,.8);
+  backdrop-filter: saturate(180%) blur(10px);
+  color: rgba(0,0,0,0.9);
+}
+header ul{
+  display: flex;
+  list-style: none;
+}
+
+header ul li{
+  margin: 10px;
+  cursor: pointer;
+}
+
+header ul li a{
+  text-decoration: none;
+  color: white;
+  background: inherit;
+}
+header .search-button{
+  margin-right: 50px;
+  
+}
+header ul li.active a{
+  color: rgba(253,230,138,1) !important
+}
+header .search-button button{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 52px;
+  font-size: 14px;
+  border: none;
+  margin-right: 10px;
+  color: rgba(0,0,0,0.5);
+  background: rgba(255,255,255,0.8);
+  transition: 0.3s;
+}
+header .search-button button:hover{
+  background-color: rgba(255,255,255,0.4);
+  color: rgba(0,0,0,.8);
+}
+header .search-button button.scrolling:hover{
+  color: rgba(255,255,255,.8) !important;
+  background-color: rgba(0,0,0,0.5);
+}
+header .search-button button.scrolling{transition: 0.3s;}
+.scrolling{
+  color: rgba(0,0,0,0.9) !important;
+  transition: 0.3s;
+}
+
+/* Carousel */
+.carousel__content{
+  width: 80%;
+  margin: 0 5vw 0 10vw;
+}
+
+.carousel__header{
+  margin-top: 40vh;
+  font-size: 36px;
+  margin-bottom: 10vh;
+}
+
+.carousel__content .owl-theme .card__content img{
+  border-radius: 10px;
+}
+
+.owl-theme .owl-dots .owl-dot{
+  display: none !important;
+}
+.carousel__content .owl-carousel .owl-nav button{
+  
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(229,231,235,1) !important;
+  line-height: 15px !important;
+}
+.carousel__content .owl-carousel .owl-nav button.owl-prev{
+  position: absolute;
+  left: 5px;
+  top: 35%;
+}
+.carousel__content .owl-carousel .owl-nav button.owl-next{
+  position: absolute;
+  right: 5px;
+  top: 35%;
+}
+.carousel__content .owl-carousel .owl-nav button span{
+  font-size: 30px !important;
+}
+.card__content img{
+  transition: 0.3s;
+  cursor: pointer;
+}
+.card__content img:hover{
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05);
+}
+.card__detail{
+  color: rgba(55,68,81,1);
+}
+.card__detail h2{
+  font-size: 16px;
+}
+
+.card__detail p{
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.card__detail p span{
+  font-weight: 400;
+}
